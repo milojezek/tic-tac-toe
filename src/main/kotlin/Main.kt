@@ -11,7 +11,7 @@ fun main() {
     printField(currentField)
     
     // Game loop
-    while(gameContinues(currentField)) {
+    while (gameContinues(currentField)) {
         val coordinates = selectAndCheckCoordinates(currentField)
         currentField = updateField(coordinates, currentField, turn)
         printField(currentField)
